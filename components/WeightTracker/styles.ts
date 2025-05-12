@@ -70,7 +70,7 @@ export const styles = StyleSheet.create({
     textAlign: 'right',
   },
   input: {
-  width: 120, // Fixed width for all inputs
+  width: 70, // Fixed width for all inputs
   borderWidth: 1,
   borderColor: '#BDBDBD',
   borderRadius: 5,

@@ -1,20 +1,18 @@
-import React, { useState, useEffect, useRef } from 'react';
-import {
-  View,
-  Text,
-  TextInput,
-  ScrollView,
-  StyleSheet,
-  Image,
-  TouchableOpacity,
-  Modal,
-  Platform,
-  TouchableWithoutFeedback
-} from 'react-native';
+import { styles } from '@/components/WeightTracker/styles'; // Use `@` alias or relative path
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import DateTimePicker from '@react-native-community/datetimepicker';
 import { Picker } from '@react-native-picker/picker';
-import AsyncStorage from '@react-native-async-storage/async-storage';
-import { styles } from '@/components/WeightTracker/styles'; // Use `@` alias or relative path
+import React, { useEffect, useRef, useState } from 'react';
+import {
+  Image,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  TouchableWithoutFeedback,
+  View
+} from 'react-native';
 
 type WeekData = {
   weights: (number | null)[];
@@ -35,7 +33,7 @@ type Inputs = {
 const WeightTracker = () => {
   // State for user inputs
   const [inputs, setInputs] = useState<Inputs>({
-    startDate: new Date('2020-11-11'),
+    startDate: new Date('2020-11-12'),
     weightUnit: 'Lb',
     calorieUnit: 'Cal',
     startingWeight: 0,
