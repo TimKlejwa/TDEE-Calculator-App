@@ -301,7 +301,7 @@ const calorieUnitRef = useRef<React.ElementRef<typeof TouchableOpacity>>(null);
               {/* Table Header */}
               <View style={styles.tableRow}>
                 <Text style={[styles.tableHeaderCell, { width: 100 }]}>Week</Text>
-                <Text style={[styles.tableHeaderCell, { width: 60 }]}>Stats</Text>
+                <Text style={[styles.tableHeaderCell, { width: 65 }]}>Stats</Text>
                 {['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].map(day => (
                   <Text key={day} style={[styles.tableHeaderCell, { width: 60 }]}>{day}</Text>
                 ))}
@@ -330,7 +330,7 @@ const calorieUnitRef = useRef<React.ElementRef<typeof TouchableOpacity>>(null);
                     {/* Weight Row */}
                     <View style={styles.tableRow}>
                       <Text style={[styles.tableCell, { width: 100 }]}>{weekDate}</Text>
-                      <Text style={[styles.tableCell, { width: 60 }]}>Weight</Text>
+                      <Text style={[styles.tableCell, { width: 65 }]}>Weight</Text>
                       {week.weights.map((weight, dayIndex) => (
                         <TextInput
                           key={`weight-${dayIndex}`}
@@ -352,7 +352,7 @@ const calorieUnitRef = useRef<React.ElementRef<typeof TouchableOpacity>>(null);
                     {/* Calories Row */}
                     <View style={styles.tableRow}>
                       <Text style={[styles.tableCell, { width: 100 }]}></Text>
-                      <Text style={[styles.tableCell, { width: 60 }]}>Calories</Text>
+                      <Text style={[styles.tableCell, { width: 65 }]}>Calories</Text>
                       {week.calories.map((cal, dayIndex) => (
                         <TextInput
                           key={`cal-${dayIndex}`}
