@@ -10,7 +10,6 @@ export const styles = StyleSheet.create({
     paddingBottom: 30,
   },
   logoContainer: {
-    alignItems: 'center',
     marginBottom: 20,
     paddingTop: 10,
   },

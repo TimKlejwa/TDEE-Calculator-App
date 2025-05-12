@@ -249,27 +249,7 @@ const calorieUnitRef = useRef<React.ElementRef<typeof TouchableOpacity>>(null);
               />
             </View>
 
-            <View style={styles.inputRow}>
-              <Text style={styles.label}>Daily Surplus:</Text>
-              <TextInput
-                style={styles.input}
-                value={inputs.dailySurplus.toString()}
-                keyboardType="numeric"
-                onChangeText={(v) => handleInputChange('dailySurplus', parseInt(v) || 0)}
-              />
-            </View>
-
-            <View style={styles.inputRow}>
-              <Text style={styles.label}>Estimated TDEE:</Text>
-              <TextInput
-                style={styles.input}
-                value={inputs.tdee.toString()}
-                keyboardType="numeric"
-                onChangeText={(v) => handleInputChange('tdee', parseInt(v) || 0)}
-              />
-            </View>
           </View>
-
           {/* Current Stats */}
           <View style={[styles.section, styles.statsSection]}>
             <Text style={styles.sectionTitle}>Current Body Stats</Text>
